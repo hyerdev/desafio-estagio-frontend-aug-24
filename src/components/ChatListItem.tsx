@@ -17,7 +17,7 @@ function ChatListItem() {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
       </div>
-      <div className="w-[420px] pr-4 flex flex-col justify-center">
+      <div className="w-[420px] pr-4 flex flex-col justify-center relative">
         <div className="flex items-center justify-between">
           <p className="text-light-gray">Rodolpho Nikerson</p>
           <span className="text-xs text-normal-gray">Yesterday</span>
@@ -46,6 +46,7 @@ function ChatListItem() {
             </DropdownMenu>
           </div>
         </div>
+        <span className="w-full h-[1px] absolute bottom-0 bg-light-black"></span>
       </div>
     </div>
   )
