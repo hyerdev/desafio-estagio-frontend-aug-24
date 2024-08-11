@@ -1,4 +1,4 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -7,17 +7,14 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { ChatItem } from '@/interfaces'
 import { DownArrow, Muted, Read } from './icons'
+import AvatarSection from './AvatarSection'
 
 function ChatListItem({ item }: { item: ChatItem }) {
   const { avatarUrl, isGroup, isMuted, isRead, lastInteraction, message, name, groupMessager } = item
+  console.log(isRead)
   return (
     <div className="max-w-[500px] w-full h-[72px] flex bg-dark-black cursor-pointer hover:bg-light-black relative group">
-      <div className="flex items-center px-4">
-        <Avatar>
-          <AvatarImage src={avatarUrl} alt="Profile Picture" />
-          <AvatarFallback>{name[0] || "?"}</AvatarFallback>
-        </Avatar>
-      </div>
+      <AvatarSection avatarUrl={avatarUrl} name={name} />
       <div className="w-[420px] pr-4 flex flex-col justify-center relative">
         <div className="flex items-center justify-between">
           <p className="text-light-gray">{name}</p>

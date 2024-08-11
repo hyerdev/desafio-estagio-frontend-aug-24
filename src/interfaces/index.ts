@@ -13,3 +13,8 @@ export interface ChatStore {
   items: ChatItem[]
   fetchItems: () => void
 }
+
+export interface AvatarSectionProps {
+  avatarUrl: string
+  name: string
+}

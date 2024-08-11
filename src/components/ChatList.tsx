@@ -3,7 +3,7 @@ import ChatListItem from './ChatListItem'
 import { useChatStore } from '@/store/useChatStore'
 
 function ChatList() {
-  const { items, fetchItems } = useChatStore();
+  const { items, fetchItems } = useChatStore()
 
   useEffect(() => {
     fetchItems()
