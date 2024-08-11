@@ -1,4 +1,4 @@
-const MutedIcon = () => {
+const Muted = () => {
   return (
     <svg
       viewBox="0 0 16 18"
@@ -19,4 +19,4 @@ const MutedIcon = () => {
   )
 }
 
-export default MutedIcon
+export default Muted

@@ -1,4 +1,4 @@
-const DownArrowIcon = () => {
+const DownArrow = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -24,4 +24,4 @@ const DownArrowIcon = () => {
   )
 }
 
-export default DownArrowIcon
+export default DownArrow

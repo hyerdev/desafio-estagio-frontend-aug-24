@@ -5,10 +5,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import ReadIcon from './ReadIcon'
-import DownArrowIcon from './DownArrowIcon'
 import { ChatItem } from '@/interfaces'
-import MutedIcon from './MutedIcon'
+import { DownArrow, Muted, Read } from './icons'
 
 function ChatListItem({ item }: { item: ChatItem }) {
   const { avatarUrl, isGroup, isMuted, isRead, lastInteraction, message, name, groupMessager } = item
@@ -27,18 +25,18 @@ function ChatListItem({ item }: { item: ChatItem }) {
         </div>
         <div className="flex mt-1 items-center justify-between">
           <div className="text-sm flex gap-1">
-            {!isGroup && <ReadIcon color={isRead ? "#E9EDEF" : "#8696A0"} />}
+            {!isGroup && <Read color={isRead ? "#E9EDEF" : "#8696A0"} />}
             <div>
               <p className="text-normal-gray line-clamp-1">
                 {groupMessager && `${groupMessager}: `} {message}
               </p>
             </div>
-            <p>{isMuted && <MutedIcon />}</p>
+            <p>{isMuted && <Muted />}</p>
           </div>
           <div className="transform translate-x-2 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-200 ease-in-out">
             <DropdownMenu>
               <DropdownMenuTrigger>
-                <DownArrowIcon />
+                <DownArrow />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>Archive chat</DropdownMenuItem>

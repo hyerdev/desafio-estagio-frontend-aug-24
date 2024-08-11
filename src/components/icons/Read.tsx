@@ -1,4 +1,4 @@
-const ReadIcon = ({ color }: { color: string }) => {
+const Read = ({ color }: { color: string }) => {
   return (
     <svg
       viewBox="0 0 18 18"
@@ -18,4 +18,4 @@ const ReadIcon = ({ color }: { color: string }) => {
   )
 }
 
-export default ReadIcon
+export default Read
