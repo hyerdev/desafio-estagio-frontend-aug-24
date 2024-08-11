@@ -1,4 +1,4 @@
-import Search from './icons/Search'
+import { Search } from './icons'
 import { Input } from './ui/input'
 
 function ChatListSearch() {
