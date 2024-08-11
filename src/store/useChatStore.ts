@@ -1,4 +1,5 @@
 import { ChatStore } from '@/interfaces'
+import { sortItemsByDate } from '@/utils/sortItemsByDate'
 import { create } from 'zustand'
 
 export const useChatStore = create<ChatStore>((set, get) => ({
@@ -9,7 +10,10 @@ export const useChatStore = create<ChatStore>((set, get) => ({
     try {
       const response = await fetch('/mockData.json')
       const data = await response.json()
-      set({ items: data })
+
+      const sortedItems = sortItemsByDate(data)
+
+      set({ items: sortedItems })
     } catch (error) {
       console.error(`Error loading data: ${error}`)
     }
