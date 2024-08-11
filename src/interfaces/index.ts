@@ -18,3 +18,16 @@ export interface AvatarSectionProps {
   avatarUrl: string
   name: string
 }
+
+export interface ChatItemHeaderProps {
+  name: string
+  lastInteraction: string
+}
+
+export interface ChatMessageProps {
+  isGroup: boolean
+  isRead: boolean
+  message: string
+  groupMessager?: string
+  isMuted: boolean
+}
