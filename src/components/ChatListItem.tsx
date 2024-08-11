@@ -22,7 +22,7 @@ function ChatListItem({ item }: { item: ChatItem }) {
         </div>
         <div className="flex mt-1 items-center justify-between">
           <div className="text-sm flex gap-1">
-            {!isGroup && <Read color={isRead ? "#E9EDEF" : "#8696A0"} />}
+            {!isGroup && <Read color={isRead ? "#53BDEB" : "#8696A0"} />}
             <div>
               <p className="text-normal-gray line-clamp-1">
                 {groupMessager && `${groupMessager}: `} {message}
