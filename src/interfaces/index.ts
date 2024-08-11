@@ -11,7 +11,9 @@ export interface ChatItem {
 
 export interface ChatStore {
   items: ChatItem[]
+  searchContent: string
   fetchItems: () => void
+  setSearchTxt: (searchTxt: string) => void
 }
 
 export interface AvatarSectionProps {

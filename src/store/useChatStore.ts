@@ -3,6 +3,7 @@ import { create } from 'zustand'
 
 export const useChatStore = create<ChatStore>((set) => ({
   items: [],
+  searchContent: '',
   fetchItems: async () => {
     try {
       const response = await fetch('/mockData.json')
@@ -12,4 +13,5 @@ export const useChatStore = create<ChatStore>((set) => ({
       console.error(`Error loading data: ${error}`)
     }
   },
+  setSearchTxt: (searchTxt: string) => set({ searchContent: searchTxt }),
 }))
