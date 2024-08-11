@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Rodolpho Nikerson",
+    "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocL565cNijJRq7a0xdCjDuIQbxojh2DA0aWBQBwe4AL0LZ_MXGM=s288-c-no",
+    "message": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "isRead": false,
+    "isGroup": false,
+    "isMuted": true,
+    "lastInteraction": "2024-08-11T14:30:00Z"
+  },
+  {
+    "name": "Fiódor Dostoiévski",
+    "avatarUrl": "https://cdn.pensador.com/img/authors/fi/od/fiodor-dostoievski-l.jpg",
+    "message": "But how could you live and have no story to tell?",
+    "isRead": true,
+    "isGroup": false,
+    "isMuted": false,
+    "lastInteraction": "2024-08-10T14:30:00Z"
+  },
+  {
+    "name": "Albert Camus",
+    "avatarUrl": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.portaldaliteratura.com%2Fautores.php%3Fautor%3D2527&psig=AOvVaw3bA-7OvuBMSN53-idJghos&ust=1723416687889000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDThtHB64cDFQAAAAAdAAAAABAE",
+    "message": "I opened myself to the gentle indifference of the world.",
+    "isRead": false,
+    "isGroup": false,
+    "isMuted": false,
+    "lastInteraction": "2024-08-11T13:15:00Z"
+  },
+  {
+    "name": "Sylvia Plath",
+    "avatarUrl": "https://img.peliplat.com/api/resize/v1?imagePath=std/202108/f/e/fe1dd3aef1bbeb6c0b739daa098f7587.jpg&mode=FILL&width=750&height=880&limit=false&c=1.jpg",
+    "message": "There is nothing like puking with somebody to make you into old friends.",
+    "isRead": false,
+    "isGroup": false,
+    "isMuted": false,
+    "lastInteraction": "2024-08-11T17:45:00Z"
+  },
+  {
+    "name": "Johnny Silverhand",
+    "avatarUrl": "https://static.displate.com/857x1200/displate/2023-03-30/56f858bb5da7668a31110b7bebf08ec4_090e2d0423cb60683122b9c0742e390a.jpg",
+    "message": "Goodbye, V, and never stop fighting.",
+    "isRead": false,
+    "isGroup": false,
+    "isMuted": false,
+    "lastInteraction": "2024-08-11T18:30:00Z"
+  },
+  {
+    "name": "Confraternização - Hyerdev",
+    "avatarUrl": "https://www.hyerdev.com/_next/image?url=%2Fheader%2Flogo-dark.svg&w=128&q=75",
+    "message": "Local: Izu; Data: 20/12/2024 às 12h; Rodízio patrocinado pelo Arthur.",
+    "groupMessager": "Juliana",
+    "isRead": false,
+    "isGroup": true,
+    "isMuted": false,
+    "lastInteraction": "2024-08-09T16:30:00Z"
+  },
+  {
+    "name": "Connor",
+    "avatarUrl": "https://w0.peakpx.com/wallpaper/785/258/HD-wallpaper-video-game-detroit-become-human-connor-detroit-become-human.jpg",
+    "message": "My name is Connor. I'm the android sent by CyberLife.",
+    "isRead": true,
+    "isGroup": false,
+    "isMuted": false,
+    "lastInteraction": "2024-08-07T22:00:00Z"
+  }
+]
