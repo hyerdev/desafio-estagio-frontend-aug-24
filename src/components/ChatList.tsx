@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import ChatListItem from './ChatListItem'
 import { useChatStore } from '@/store/useChatStore'
 import ChatListSearch from './ChatListSearch'
+import { filterItems } from '@/utils/filterItems'
 
 function ChatList() {
   const { items, fetchItems, searchContent, filter } = useChatStore()
@@ -10,19 +11,7 @@ function ChatList() {
     fetchItems()
   }, [fetchItems])
 
-  const filteredItems = items
-    .filter(item =>
-      item.name.toLowerCase().includes(searchContent.toLowerCase())
-    )
-    .filter(item => {
-      if (filter === 'unread') {
-        return !item.isRead
-      }
-      if (filter === 'groups') {
-        return item.isGroup
-      }
-      return true
-    })
+  const filteredItems = filterItems(items, searchContent, filter)
 
   return (
     <div className="flex flex-col max-w-full bg-dark-black">
