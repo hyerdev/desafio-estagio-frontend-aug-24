@@ -6,7 +6,6 @@ import ChatItemMessage from './ChatItemMessage'
 
 function ChatListItem({ item }: { item: ChatItem }) {
   const { avatarUrl, isGroup, isMuted, isRead, lastInteraction, message, name, groupMessager } = item
-  console.log(isRead)
   return (
     <div className="max-w-[500px] w-full h-[72px] flex bg-dark-black cursor-pointer hover:bg-light-black relative group">
       <AvatarSection avatarUrl={avatarUrl} name={name} />
