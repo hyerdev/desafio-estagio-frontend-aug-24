@@ -9,6 +9,7 @@ const Read = ({ color }: { color: string }) => {
       x="0px"
       y="0px"
       enable-background="new 0 0 18 18"
+      className="min-w-[18px] min-h-[18px]"
     >
       <path
         fill={color}
