@@ -1,9 +1,10 @@
 import { ChatStore } from '@/interfaces'
 import { create } from 'zustand'
 
-export const useChatStore = create<ChatStore>((set) => ({
+export const useChatStore = create<ChatStore>((set, get) => ({
   items: [],
   searchContent: '',
+  filter: 'all',
   fetchItems: async () => {
     try {
       const response = await fetch('/mockData.json')
@@ -14,4 +15,8 @@ export const useChatStore = create<ChatStore>((set) => ({
     }
   },
   setSearchTxt: (searchTxt: string) => set({ searchContent: searchTxt }),
+  setFilter: (filter: string) => {
+    const currentFilter = get().filter
+    set({ filter: currentFilter === filter ? 'all' : filter })
+  },
 }))
